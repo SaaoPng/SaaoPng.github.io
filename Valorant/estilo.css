@@ -1,0 +1,20 @@
+img{
+    width: 75px;
+    height: 23px;
+}
+
+.a{
+    width: 25px;
+    height: 20px;
+}
+
+.boton{
+    line-height: 16px;
+    z-index: 0;
+    text-overflow: ellipsis;
+    margin-left: 405px;
+    height: 38px;
+    border-radius: 12px;
+    padding: 0px 10px;
+    color: #111;
+}
