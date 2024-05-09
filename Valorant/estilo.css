@@ -22,3 +22,13 @@ img{
     width: 634px;
     height: 500px;
 }
+
+.Encabezado{
+    background-image: url(videoplayback.mp4);
+    height: 200px; 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; color:#fff;
+}
