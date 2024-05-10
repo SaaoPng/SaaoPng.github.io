@@ -107,3 +107,16 @@ p{
     height: 65%;
     padding: 19px 30px 40px 19px;
 }
+#ALC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HOVER:hover{
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+}
+#W{
+    height: 100px;
+    width: 150px;
+}
