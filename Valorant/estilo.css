@@ -27,8 +27,8 @@ img{
     background-size: 100% 2px;
 }
 #AL{
-   height: 45px;
-   width: 44px; 
+   height: 25px;
+   width: 25px; 
 }
 .boton{
     line-height: 16px;
@@ -44,6 +44,38 @@ img{
     width: 634px;
     height: 500px;
 }
+.linea{
+    border-right: 1px solid hsla(38, 22%, 90%, .5);
+    right: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+}
+.cuadrado{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7em;
+    z-index: 2;
+    width: 1em; 
+    height: 1em; 
+    background-color: #ff4655;
+}
+
+.triangulo{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 80%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-right: 55px solid transparent;
+    border-left: 0 solid transparent;
+    border-bottom: 55px solid #ece8e1;
+}
+
 .texto{
     padding-top: 150px;
     display: flex;
@@ -65,7 +97,7 @@ video{
     top: 0;
     left: 0;
     width: 100%;
-    height: 76%;
+    height: 77%;
     object-fit: cover;
 }
 
@@ -101,7 +133,20 @@ p{
     font: 19px, medium, bold, arial, georgia, sans-serif;
     padding: 15px 27px;
 }
+.galeria{
+    display: flex;
+    gap: 30px;
+}
+.imagen{
+    width: 390px;
+    height: 219.38px;
+    object-fit: cover;
+    display: flex;    
+}
 
+.imagen:hover{
+    opacity: 30%;
+}
 .logo{
     width: 65%;
     height: 65%;
@@ -118,5 +163,6 @@ p{
 }
 #W{
     height: 100px;
-    width: 150px;
+    width: 190px;
+    border-radius: 3px;
 }
