@@ -8,20 +8,61 @@
     <script src="js/code.jquery.com_jquery-3.7.1.js"></script>
 
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
    
     <div class="container">
-        <h1>Proyecto Final Shiadani Alitzel Andrade Ortiz</h1>
+        <h1 style="color: #757575;">Proyecto Final</h1> 
+        <h4 style="color: #e0e993;">Shiadani Alitzel Andrade Ortiz</h4>
         <div class="row mt-2">
             <div class="col">
-                <h2>Consulta #1 Obtener el listado de alumnos</h2>
-                <h1 class="card">SELECT * FROM ALUMNO</h1>
-                <img src="img/foto1.png" alt="" class="img-fluid">
+                <h3>Consulta #1 Obtener el listado de alumnos:</h2>
+                <h5 class="card">SELECT * FROM ALUMNO</h1>
+                <img src="img/foto1.png" alt="" class="img-fluid" height="80%" width="80%">
             </div>
             <div class="col">
-                <h2>Consulta #2 Obtener el listado de cursos(nombre) y las asignaturas asignadas</h2>
-                <h1 class="card">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h1>
-                <img src="img/foto2.png" alt="" class="img-fluid">
+                <h3>Consulta #2 Obtener el listado de cursos(nombre) y las asignaturas asignadas:</h2>
+                <h5 class="card">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h1>
+                <img src="img/foto2.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #3 Obtener listado (nombre y apellido) de alumnos que tengan beca:</h2>
+                <h5 class="card">SELECT nombre,apellido1,apellido2 FROM alumno WHERE beca LIKE 'si';</h1>
+                <img src="img/foto3.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #4 Obtener listado de profesores (nombre y apellido) y su numero de contacto:</h2>
+                <h5 class="card">SELECT profesor.nombre, profesor.apellido1, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof;</h1>
+                <img src="img/foto4.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #5 Obtener listado de alumnos (Todos los campos) que están inscritos a la asignatura:</h2>
+                <h5 class="card">SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009';</h1>
+                <img src="img/foto5.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #6 Obtener listado de profesores y asignaturas que imparten:</h2>
+                <h5 class="card">SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura;</h1>
+                <img src="img/foto6.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #7 Mostrar la asignatura que tiene más alumnos inscritos y su total:</h2>
+                <h5 class="card"></h1>
+                <img src="img/foto7.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #8 Obtener listado de alumnos que les da clase el profesor con ID PRO48 (Jose manuel) sin importar en que asignatura esté inscrito:</h2>
+                <h5 class="card"></h1>
+                <img src="img/foto8.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #9 Obtener listado de cursos, con asignatura y el maestro que las imparte:</h2>
+                <h5 class="card"></h1>
+                <img src="img/foto9.png" alt="" class="img-fluid" height="80%" width="80%">
+            </div>
+            <div class="col">
+                <h3>Consulta #10 Obtener listado de alumnos, con asignaturas que cursa, profesor que la imparte y curso al que pertenece:</h2>
+                <h5 class="card"></h1>
+                <img src="img/foto10.png" alt="" class="img-fluid" height="80%" width="80%">
             </div>
         </div>
     </div>
