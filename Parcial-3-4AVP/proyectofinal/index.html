@@ -51,17 +51,23 @@
             </div>
             <div class="col">
                 <h3>Consulta #8 Obtener listado de alumnos que les da clase el profesor con ID PRO48 (Jose manuel) sin importar en que asignatura esté inscrito:</h2>
-                <h5 class="card"></h1>
+                <h5 class="card">SELECT alumno.nombre,profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idProfesor="PR048" INNER JOIN matricula on impartir.idAsignatura=matricula.idAsignatura;</h1>
                 <img src="img/foto8.png" alt="" class="img-fluid" height="80%" width="80%">
             </div>
             <div class="col">
                 <h3>Consulta #9 Obtener listado de cursos, con asignatura y el maestro que las imparte:</h2>
-                <h5 class="card"></h1>
+                <h5 class="card">SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;</h1>
                 <img src="img/foto9.png" alt="" class="img-fluid" height="80%" width="80%">
             </div>
             <div class="col">
                 <h3>Consulta #10 Obtener listado de alumnos, con asignaturas que cursa, profesor que la imparte y curso al que pertenece:</h2>
-                <h5 class="card"></h1>
+                <h5 class="card">SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
+                    FROM alumno
+                    INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno
+                    INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura
+                    INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura
+                    INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor
+                    INNER JOIN curso ON curso.idCurso=asignatura.curso;</h1>
                 <img src="img/foto10.png" alt="" class="img-fluid" height="80%" width="80%">
             </div>
         </div>
